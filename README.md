@@ -2,6 +2,8 @@
 
 A compact, ad-free, dark-mode Windows manga reader built with Python + CustomTkinter.
 
+![Screenshot1](https://github.com/ilickft/Freaker/raw/main/screenshots/screenshot1.png)
+
 ## Features
 - Home grid: 40 covers per page, paginated, with search
 - Manga detail: chapter list with dates, sorted newest-first
