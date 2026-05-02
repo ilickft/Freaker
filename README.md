@@ -1,4 +1,4 @@
-# MangaReader – hentai20.io Desktop Client
+# MangaReader – Desktop Client
 
 A compact, ad-free, dark-mode Windows manga reader built with Python + CustomTkinter.
 
