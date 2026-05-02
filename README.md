@@ -69,8 +69,8 @@ pyinstaller --onefile --windowed --name MangaReader ^
 | Page type     | Selector / method                             |
 |---------------|-----------------------------------------------|
 | Home grid     | `.bsx a` → href, img[src], `.tt`, `.epxs`    |
-| Pagination    | `https://hentai20.io/page/{n}/`               |
-| Search        | `https://hentai20.io/?s=<query>`              |
+| Pagination    | `https://secret.io/page/{n}/`               |
+| Search        | `https://secret.io/?s=<query>`              |
 | Manga detail  | `#chapterlist .eph-num a` for chapter list    |
 | Chapter imgs  | `ts_reader.run({…})` JSON in `<script>` tag  |
 | Fallback imgs | `#readerarea img[src]`                        |
