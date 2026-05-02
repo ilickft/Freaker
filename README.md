@@ -40,7 +40,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## Build single Windows executable
+## Build single Windows executable or Get the [pre-built](https://github.com/ilickft/Freaker/releases/tag/1.0.1)
 
 ```bash
 pip install pyinstaller
