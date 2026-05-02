@@ -22,6 +22,8 @@ fi
 
 echo ""
 echo "[3/4] Installing Python dependencies..."
+python -m venv venv
+source .venv/bin/activate
 pip install -r requirements.txt
 
 echo ""
