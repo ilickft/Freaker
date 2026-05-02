@@ -10,4 +10,4 @@ dist/
 .idea/
 *.log
 MangaReader Downloads/
-.gitignore
+*.ico
