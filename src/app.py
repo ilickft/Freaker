@@ -55,31 +55,6 @@ class ScrollableFrame(ctk.CTkScrollableFrame):
         kw.setdefault("scrollbar_button_hover_color", ACCENT)
         super().__init__(master, **kw)
 
-        # Enable mouse wheel scrolling for Linux/Android and ensure it works on children
-        self.bind("<Enter>", self._bind_mouse_wheel)
-        self.bind("<Leave>", self._unbind_mouse_wheel)
-
-    def _bind_mouse_wheel(self, event=None):
-        self.bind_all("<Button-4>", self._on_mousewheel)
-        self.bind_all("<Button-5>", self._on_mousewheel)
-        self.bind_all("<MouseWheel>", self._on_mousewheel)
-
-    def _unbind_mouse_wheel(self, event=None):
-        self.unbind_all("<Button-4>")
-        self.unbind_all("<Button-5>")
-        self.unbind_all("<MouseWheel>")
-
-    def _on_mousewheel(self, event):
-        if not self.winfo_exists():
-            return
-        if event.num == 4:
-            self._parent_canvas.yview_scroll(-1, "units")
-        elif event.num == 5:
-            self._parent_canvas.yview_scroll(1, "units")
-        elif event.delta:
-            # For Windows/macOS
-            self._parent_canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
-
 
 class SidebarButton(ctk.CTkButton):
     def __init__(self, master, **kw):
